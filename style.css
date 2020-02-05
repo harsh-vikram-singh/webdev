@@ -1,0 +1,66 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* setting up the grid containing the layout for the whole page */
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: [col-start]600px[col-end];
+    grid-template-rows: [nav-start]min-content[nav-end]
+    [header-start]400px [header-end][content-start] 1fr [content-end][footer-start] 100px [footer-end];
+    /* grid-template-areas:
+    "nav"
+    "header"
+    "content"
+    "footer"; */
+}
+
+/* setting up the nav bar */
+.navBar {
+    /* grid-area: nav; */
+    grid-column: col-start / col-end;
+    grid-row: nav-start / nav-end;
+    display: flex;
+    /* align-items: center; */
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navList__item {
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: 500;
+}
+
+/* setting up the hero section */
+.header {
+    /* grid-area: header; */
+    grid-column: col-start / col-end;
+    grid-row: header-start / header-end;
+}
+
+/* setting up the section with the blogs */
+.content {
+    /* grid-area: content; */
+    grid-column: col-start / col-end;
+    grid-row: content-start / content-end;
+}
+
+
+/* setting up the footer */
+footer{
+    /* grid-area: footer; */
+    grid-column: col-start / col-end;
+    grid-row: footer-start / footer-end;
+}
+
+.blog {
+    height: 200px;
+}
