@@ -8,18 +8,17 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.box {
+    border: 1px solid orangered;
+}
+
 /* setting up the grid containing the layout for the whole page */
 .container {
     height: 100vh;
     display: grid;
-    grid-template-columns: [col-start]600px[col-end];
-    grid-template-rows: [nav-start]min-content[nav-end]
-    [header-start]400px [header-end][content-start] 1fr [content-end][footer-start] 100px [footer-end];
-    /* grid-template-areas:
-    "nav"
-    "header"
-    "content"
-    "footer"; */
+    grid-template-columns: [col-start]minmax(min-content, 600px)[col-end];
+    grid-template-rows: [nav-start]min-content[nav-end header-start] 400px 
+    [header-end content-start] 1fr [content-end footer-start] 100px [footer-end];
 }
 
 /* setting up the nav bar */
@@ -28,12 +27,13 @@ body {
     grid-column: col-start / col-end;
     grid-row: nav-start / nav-end;
     display: flex;
-    /* align-items: center; */
-    align-items: center;
-    justify-content: space-around;
+    flex-flow: row wrap;
 }
 
-.navList__item {
+.navItem {
+    flex: 1 150px;
+    display: flex;
+    justify-content: center;
     font-size: 20px;
     font-family: Poppins;
     font-weight: 500;
