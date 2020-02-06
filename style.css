@@ -8,19 +8,33 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.text {
+    line-height: 1.5;
+    padding: 5px;
+}
+
 .box {
     border: 1px solid orangered;
 }
 
+.illustration {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////// */
 /* setting up the grid containing the layout for the whole page */
 .container {
     height: 100vh;
     display: grid;
     grid-template-columns: [col-start]minmax(min-content, 600px)[col-end];
-    grid-template-rows: [nav-start]min-content[nav-end header-start] 400px 
+    grid-template-rows: [nav-start]min-content[nav-end header-start] min-content 
     [header-end content-start] 1fr [content-end footer-start] 100px [footer-end];
+    grid-row-gap: 10px;
 }
 
+/* //////////////////////////////////////////////////////////////////////////// */
 /* setting up the nav bar */
 .navBar {
     /* grid-area: nav; */
@@ -39,6 +53,7 @@ body {
     font-weight: 500;
 }
 
+/* //////////////////////////////////////////////////////// */
 /* setting up the hero section */
 .header {
     /* grid-area: header; */
@@ -46,6 +61,13 @@ body {
     grid-row: header-start / header-end;
 }
 
+.header > .illustration {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+/* /////////////////////////////////////////////////////// */
 /* setting up the section with the blogs */
 .content {
     /* grid-area: content; */
@@ -53,7 +75,20 @@ body {
     grid-row: content-start / content-end;
 }
 
+.card {
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 80%;
+    margin: 30px auto 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+
+
+/* /////////////////////////////////////////////////////// */
 /* setting up the footer */
 footer{
     /* grid-area: footer; */
@@ -62,5 +97,5 @@ footer{
 }
 
 .blog {
-    height: 200px;
+    height: min-content;
 }
