@@ -26,7 +26,7 @@ body {
     display: grid;
     grid-template-columns: [col-start]minmax(200px, 600px)[col-end];
     grid-template-rows: [nav-start]min-content[nav-end header-start] min-content 
-    [header-end content-start] min-content [content-end footer-start] 100px [footer-end];
+    [header-end content-start] min-content [content-end footer-start] min-content [footer-end];
     grid-row-gap: 10px;
 }
 
@@ -97,10 +97,21 @@ body {
 
 /* //////////////////////////////////////////////////////////////////////// */
 /* setting up the footer */
-footer{
+.footer{
     /* grid-area: footer; */
     grid-column: col-start / col-end;
     grid-row: footer-start / footer-end;
+}
+
+.footer__icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.icon {
+    font-size: 25px;
 }
 
 /* .blog {
