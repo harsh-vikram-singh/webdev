@@ -33,17 +33,17 @@
         grid-column: full-start / full-end;
         grid-row: header-start / header-end;
         margin-top: 4rem;
-        /* display: flex; */
-    }
-
-    .intro__container {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
     }
-    .intro__illustration {
-        width: 60%;
-    }
+
+    /* .intro__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } */
 }
 
 /* media queries for screen width greater than 900px */

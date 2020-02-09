@@ -57,10 +57,14 @@
 }
 
 /* media query for screens greater than 600px and less than 900px */
+/* the content section is made a nested grid here */
 @media (min-width: 601px) and (max-width: 900px) {
     .content {
         grid-column: content-start / content-end;
         flex-flow: row wrap;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: min-content;
     }
 
     /* .card {
@@ -76,10 +80,10 @@
         align-items: center;
     } */
 
-    .card > :nth-child(odd) {
+    /* .card > :nth-child(odd) {
         grid-column: col-start 1 / col-start 3;
         /* flex: 1 20rem; */
-    }
+    } */
 
     
 }
