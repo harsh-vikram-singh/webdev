@@ -26,14 +26,24 @@
 .intro__text {
     font-size: 2rem;
 }
+
+/* media queries for screen width between 600 and 900 px */
 @media only screen and (min-width: 601px) and (max-width: 900px) {
     .intro {
         grid-column: full-start / full-end;
         grid-row: header-start / header-end;
         margin-top: 4rem;
+        /* display: flex; */
+    }
+
+    .intro__container {
         display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .intro__illustration {
-        width: 50%;
+        width: 60%;
     }
 }
+
+/* media queries for screen width greater than 900px */

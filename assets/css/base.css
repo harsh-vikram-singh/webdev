@@ -44,6 +44,7 @@ body {
         grid-template-rows: [nav-start]min-content[nav-end header-start] min-content 
         [header-end content-start] min-content [content-end footer-start] min-content [footer-end];
         grid-row-gap: 10px;
+        grid-column-gap: 1.5rem;
 
     }
 }

@@ -9,7 +9,8 @@
 
 .navItem {
     flex: 1;
-    padding: 1rem 1rem;
+    /* padding: 1rem 1rem; */
+    margin: 1rem;
     display: flex;
     justify-content: center;
     font-size: 2rem;
@@ -17,10 +18,17 @@
     font-weight: 500;
 }
 
+.navItem:hover {
+    border-bottom : .2rem solid rgba(39,174,96 ,.5);
+    /* background-color: rgba(39,174,96 ,.1); */
+    font-size: 2.05rem;
+}
+
 @media (max-width: 300px) {
     .navItem {
         flex: 1 15rem;
-        padding: 1rem 1rem;
+        /* padding: 1rem 1rem; */
+        margin: 1rem;
         display: flex;
         justify-content: center;
         font-size: 2rem;
