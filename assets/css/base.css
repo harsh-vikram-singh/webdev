@@ -1,0 +1,55 @@
+/* global reset */
+*,
+*::before,
+*::after {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5% /* 10px/16px = 62.5% ==> 1rem = 10px */
+}
+/* @media (max-width: 300px) {
+    html{
+        font-size: 50%;
+    }
+} */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    /* can add font-weight and color here */
+    line-height: 1.6;
+}
+
+.font__code {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    /* height: 100vh; */
+    display: grid;
+    grid-template-columns: [col-start]minmax(min-content, 60rem)[col-end];
+    grid-template-rows: [nav-start]min-content[nav-end header-start] min-content 
+    [header-end content-start] min-content [content-end footer-start] min-content [footer-end];
+    grid-row-gap: 10px;
+}
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    .container {
+        display: grid;
+        grid-template-columns: [full-start] 1fr [content-start] repeat(4, [col-start] minmax(min-content, 15rem) [col-end])
+        [content-end] 1fr [full-end];
+        grid-template-rows: [nav-start]min-content[nav-end header-start] min-content 
+        [header-end content-start] min-content [content-end footer-start] min-content [footer-end];
+        grid-row-gap: 10px;
+
+    }
+}
+
+/* adding boxes for debugging. to be removed later */
+/* .box {
+    border: .1rem solid orangered;
+} */
+

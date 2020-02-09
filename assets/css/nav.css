@@ -1,0 +1,39 @@
+.navBar {
+    grid-column: col-start / col-end;
+    grid-row: nav-start / nav-end;
+    display: flex;
+    flex-flow: row wrap;
+    /* justify-content: space-between; */
+    /* padding: 1rem 0; */
+}
+
+.navItem {
+    flex: 1;
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    font-family: Poppins;
+    font-weight: 500;
+}
+
+@media (max-width: 300px) {
+    .navItem {
+        flex: 1 15rem;
+        padding: 1rem 1rem;
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+        font-family: Poppins;
+        font-weight: 500;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .navBar {
+        grid-column:content-start / content-end;
+        grid-row: nav-start / nav-end;
+        display: flex;
+        flex-flow: row wrap;
+    }
+}

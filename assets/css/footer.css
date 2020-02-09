@@ -1,0 +1,22 @@
+.footer{
+    /* grid-area: footer; */
+    grid-column: col-start / col-end;
+    grid-row: footer-start / footer-end;
+    padding: 1.5rem;
+    background-color: rgb(243, 241, 241)
+}
+
+.footer__icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.icon {
+    font-size: 2.5rem;
+}
+
+.footer__credits {
+    margin: 0 auto;
+}
