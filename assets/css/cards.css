@@ -61,29 +61,22 @@
 @media (min-width: 601px) and (max-width: 900px) {
     .content {
         grid-column: content-start / content-end;
-        flex-flow: row wrap;
+        grid-row: content-start / content-end;
+        /* flex-flow: row wrap; */
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(autofit, min-content);
         grid-auto-rows: min-content;
     }
-
-    /* .card {
-        flex: 1 20rem;
-        overflow: hidden;
-        box-shadow: .1rem .1rem .4rem rgba(0, 0, 0, 0.25);
-        border-radius: 1rem;
-        width: 80%;
-        margin: 3rem auto 0 auto;
-        padding: 1rem;
+    .card {
+        /* padding: 3rem; */
+        flex: 1 30rem;
         display: flex;
         flex-direction: column;
-        align-items: center;
-    } */
+    }
 
-    /* .card > :nth-child(odd) {
-        grid-column: col-start 1 / col-start 3;
-        /* flex: 1 20rem; */
-    } */
-
+    .blog__illustration {
+        max-width: 80%;
+    }
     
 }
