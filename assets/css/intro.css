@@ -70,6 +70,6 @@
     }
 
     .intro__text {
-        display: none;
+        /* display: none; */
     }
 }

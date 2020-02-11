@@ -33,3 +33,9 @@
         grid-column: full-start / full-end;
     }
 }
+
+@media (min-width: 901px) {
+    .footer {
+        grid-column: full-start / full-end;
+    }
+}
