@@ -36,7 +36,7 @@ body {
     grid-row-gap: 10px;
 }
 
-@media only screen and (min-width: 601px) and (max-width: 900px) {
+@media only screen and (min-width: 600px) and (max-width: 900px) {
     .container {
         display: grid;
         grid-template-columns: [full-start] 1fr [content-start] repeat(4, [col-start] minmax(min-content, 15rem) [col-end])
@@ -46,6 +46,18 @@ body {
         grid-row-gap: 10px;
         grid-column-gap: 1.5rem;
 
+    }
+}
+
+@media (min-width:900px) {
+    .container {
+        display: grid;
+        grid-template-columns: [full-start] 1fr [content-start] repeat(4, [col-start] minmax(min-content, 30rem) [col-end])
+        [content-end] 1fr [full-end];
+        grid-template-rows: [nav-start]min-content[nav-end header-start] min-content 
+        [header-end content-start] min-content [content-end footer-start] min-content [footer-end];
+        grid-row-gap: 10px;
+        grid-column-gap: 1.5rem;
     }
 }
 
