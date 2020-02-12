@@ -3,23 +3,34 @@
     grid-column: col-start / col-end;
     grid-row: footer-start / footer-end;
     padding: 1.5rem;
-    background-color: rgb(243, 241, 241)
+    /* background-color: rgb(243, 241, 241) */
+    border-top: 1px solid #444;
 }
 
 .footer__icons {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: left;
     margin-bottom: 2rem;
 
 }
 
+.footer__contact-info {
+    display: flex;
+}
+
+.footer__email {
+    font-size: 1.6rem;
+}
+
 .icon {
     font-size: 2.5rem;
+    margin-right: 2rem;
 }
 
 .footer__icontext {
     font-size: 1.6rem;
+    margin-right: 2rem;
 }
 .footer__credits {
     /* margin: 0 auto; */
@@ -36,6 +47,6 @@
 
 @media (min-width: 901px) {
     .footer {
-        grid-column: full-start / full-end;
+        grid-column: content-start / content-end;
     }
 }
