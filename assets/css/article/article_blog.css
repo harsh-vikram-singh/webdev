@@ -11,7 +11,37 @@
     margin-bottom: 1rem;
 }
 
+/* /////////////////////////////////////////////////////// */
+/* blog heading */
 .blog_heading {
     font-size: 3rem;
     font-family: "Poppins" sans-serif;
+}
+
+/* //////////////////////////////////////////////////////// */
+/* author name */
+.author_name {
+    font-size: 1.6rem;
+}
+
+/* //////////////////////////////////////////////////////// */
+/* blog text */
+.blog_text {
+    font-size: 1.2rem;
+}
+
+/* //////////////////////////////////////////////////////// */
+/* button */
+.btn {
+    width: 10rem;
+    background: none;
+    border: 2px solid #2980b9;
+    border-radius: .3rem;
+    margin-left: 2rem;
+}
+
+.btn:hover {
+    background: #2980b9;
+    color: white;
+    cursor: pointer;
 }
