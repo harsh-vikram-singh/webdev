@@ -1,0 +1,40 @@
+.footer{
+    /* grid-area: footer; */
+    grid-column: col-start / col-end;
+    grid-row: footer-start / footer-end;
+    padding: 1.5rem;
+    /* background-color: rgb(243, 241, 241) */
+    border-top: 1px solid #444;
+}
+
+.footer__icons {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    margin-bottom: 2rem;
+
+}
+
+.footer__contact-info {
+    display: flex;
+}
+
+.footer__email {
+    font-size: 1.6rem;
+}
+
+.icon {
+    font-size: 2.5rem;
+    margin-right: 2rem;
+}
+
+.footer__icontext {
+    font-size: 1.6rem;
+    margin-right: 2rem;
+}
+.footer__credits {
+    /* margin: 0 auto; */
+    padding: 0rem;
+    text-align: center;
+    /* background: orangered; */
+}

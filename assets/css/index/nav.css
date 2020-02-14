@@ -1,4 +1,4 @@
-.navBar {
+.navbar {
     grid-column: col-start / col-end;
     grid-row: nav-start / nav-end;
     display: flex;
@@ -7,7 +7,7 @@
     /* padding: 1rem 0; */
 }
 
-.navItem {
+.navitem {
     flex: 1;
     /* padding: 1rem 1rem; */
     margin: 1rem;
@@ -18,14 +18,14 @@
     font-weight: 500;
 }
 
-.navItem:hover {
+.navitem:hover {
     border-bottom : .2rem solid rgba(39,174,96 ,.5);
     /* background-color: rgba(39,174,96 ,.1); */
     font-size: 2.05rem;
 }
 
 @media (max-width: 300px) {
-    .navItem {
+    .navitem {
         flex: 1 15rem;
         /* padding: 1rem 1rem; */
         margin: 1rem;
@@ -38,7 +38,7 @@
 }
 
 @media (min-width: 600px) {
-    .navBar {
+    .navbar {
         grid-column:content-start / content-end;
         grid-row: nav-start / nav-end;
         display: flex;

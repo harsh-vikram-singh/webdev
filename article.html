@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/css/article/article_blog.css">
     <link rel="stylesheet" href="assets/css/article/article_aside.css">
     <link rel="stylesheet" href="assets/css/article/article_footer.css">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <title>Articles List</title>
 </head>
 
@@ -39,10 +40,33 @@
             quidem ullam, tenetur, accusantium rerum voluptatum perspiciatis vel fugit consequatur ratione debitis
             doloremque, nihil nulla? Delectus, atque.
         </p>
+        <button class="blog__subscribe_btn btn">Subscribe</button>
     </article>
-    <button class="blog__subscribe_btn btn">Subscribe</button>
-    <aside class="box">author bio goes in this aside block</aside>
-    <footer class="footer">page footer goes here</footer>
+    <aside class="author_bio box">
+        <img src="assets/images/harsh_1.jpg" alt="author image" class="author_bio__img">
+        <div class="author_bio__text">Hi. I am Harsh Vikram Singh. <br> This is some random text that describes my
+            interest
+            in programming and why I started this blog. This is an extra line just so that I can make the bio a bit
+            longer.
+            I guess this must be enough.
+        </div>
+    </aside>
+    <footer class="footer box">
+        <div class="footer__contact-info">
+            <div class="footer__icons">
+                <p class="footer__icontext">Get in touch:</p>
+                <a href="https://www.linkedin.com/in/harsh-vikram-singh/">
+                    <ion-icon class="icon" name="logo-linkedin"></ion-icon>
+                </a>
+                <a href="https://github.com/harsh-vikram-singh">
+                    <ion-icon class="icon" name="logo-github"></ion-icon>
+                </a>
+            </div>
+        </div>
+        <p class="footer__credits">
+            All the illustration from this amazing website: www.undraw.co
+        </p>
+    </footer>
 </body>
 
 </html>

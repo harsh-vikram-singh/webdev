@@ -21,12 +21,12 @@ body {
     grid-template-columns: [col-start]1fr[col-end];
     grid-template-rows: 
     [nav-start] min-content [nav-end
-    blog-start] minmax(60vh, min-content) [blog-end
+    blog-start] minmax(70vh, min-content) [blog-end
     author-start] min-content [author-end
     footer-start] min-content [footer-end];
 }
 
 /* for debugging purpose */
-.box {
+/* .box {
     border: 1px solid orangered;
-}
+} */

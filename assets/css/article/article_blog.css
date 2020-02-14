@@ -27,7 +27,7 @@
 /* //////////////////////////////////////////////////////// */
 /* blog text */
 .blog_text {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 /* //////////////////////////////////////////////////////// */
@@ -37,7 +37,7 @@
     background: none;
     border: 2px solid #2980b9;
     border-radius: .3rem;
-    margin-left: 2rem;
+    margin-top: 2rem;
 }
 
 .btn:hover {
