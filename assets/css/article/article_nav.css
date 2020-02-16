@@ -1,4 +1,4 @@
-.nav {
+.navbar {
     grid-column: col-start / col-end;
     grid-row: nav-start / nav-end;
     font-family: Poppins;
@@ -7,4 +7,12 @@
     display: flex;
     justify-content: space-around;
     margin: 1rem 0 2rem 0;
+}
+
+@media (min-width: 701px) {
+    .navbar {
+        grid-column: full-start / full-end;
+        grid-row: nav-start / nav-end;
+        display: flex;
+    }
 }

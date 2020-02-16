@@ -7,6 +7,13 @@
     margin: 1rem 2rem;
 }
 
+@media (min-width: 701px) {
+    .blog {
+        grid-column: content-start / content-end;
+        grid-row: blog-start / blog-end;
+    }
+}
+
 .blog > * {
     margin-bottom: 1rem;
 }

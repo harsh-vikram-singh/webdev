@@ -7,6 +7,13 @@
     border-top: 1px solid #444;
 }
 
+@media (min-width: 701px) {
+    .footer {
+        grid-column: full-start / full-end;
+        grid-row: footer-start / footer-end;
+    }
+}
+
 .footer__icons {
     width: 100%;
     display: flex;
@@ -17,10 +24,6 @@
 
 .footer__contact-info {
     display: flex;
-}
-
-.footer__email {
-    font-size: 1.6rem;
 }
 
 .icon {

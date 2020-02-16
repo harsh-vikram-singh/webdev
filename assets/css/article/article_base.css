@@ -26,6 +26,20 @@ body {
     footer-start] min-content [footer-end];
 }
 
+@media (min-width: 701px) {
+    .container {
+        display: grid;
+        grid-template-columns: [full-start 
+        aside-start] minmax(15rem, 25rem) [aside-end
+        main-start] 1fr
+        [content-start] repeat(4, minmax(10rem, 15rem)) [content-end]
+        1fr [main-end full-end];
+        grid-template-rows: [nav-start] min-content [nav-end
+        blog-start aside-start] minmax(85vh, min-content) [blog-end aside-end
+        footer-start] min-content [footer-end];
+    }
+}
+
 /* for debugging purpose */
 /* .box {
     border: 1px solid orangered;
