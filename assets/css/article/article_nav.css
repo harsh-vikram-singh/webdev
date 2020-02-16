@@ -5,8 +5,9 @@
     font-weight: 500;
     font-size: 2rem;
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-around;
-    margin: 1rem 0 2rem 0;
+    margin: 2rem 1rem 2rem 1rem;
 }
 
 @media (min-width: 701px) {
@@ -14,5 +15,23 @@
         grid-column: full-start / full-end;
         grid-row: nav-start / nav-end;
         display: flex;
+    }
+}
+
+.navitem {
+    margin: 0 1rem;
+}
+
+@media (max-width: 300px) {
+    .navitem {
+        flex: 1 15rem;
+        /* padding: 1rem 1rem; */
+        margin: 1rem;
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+        font-family: Poppins;
+        font-weight: 500;
+        border-bottom: 1px solid #444;
     }
 }

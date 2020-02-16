@@ -3,6 +3,7 @@
     grid-row: author-start / author-end;
     display: flex;
     align-items: center;
+    background-color: rgb(247, 246, 246);
 }
 
 @media (max-width: 500px) {
@@ -25,7 +26,7 @@
         grid-row: aside-start / aside-end;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: start;
         align-content: center;
         padding: 2rem;
     }
@@ -43,7 +44,7 @@
 }
 
 .author_bio__text {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     margin: 2rem 2rem 2rem 0;
 }
 
