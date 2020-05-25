@@ -8,7 +8,7 @@
     margin-bottom: 2rem;
 }
 
-.card {
+a, .card {
     flex: 1;
     overflow: hidden;
     box-shadow: .1rem .1rem .4rem rgba(0, 0, 0, 0.25);
